@@ -3,7 +3,7 @@
     <l:layout title="Send data" type="one-column">
         <l:main-panel>
             <h1>Send data (from other host -- DO NOT ACCESS from ${app.rootUrl})</h1>
-            <form method="POST" action="${app.rootUrl}/samesite/receiveData">
+            <form method="POST" action="${app.rootUrl}samesite/receiveData">
                 <input type="hidden" name="data" value="payload"/>
                 <input type="submit" />
             </form>
