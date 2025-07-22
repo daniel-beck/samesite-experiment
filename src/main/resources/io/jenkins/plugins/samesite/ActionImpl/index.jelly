@@ -2,8 +2,8 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt">
     <l:layout title="Send data" type="one-column">
         <l:main-panel>
-            <h1>Send data (from other host)</h1>
-            <form method="POST" action="${rootURL}/samesite/receiveData">
+            <h1>Send data (from other host -- DO NOT ACCESS from ${app.rootUrl})</h1>
+            <form method="POST" action="${app.rootUrl}/samesite/receiveData">
                 <input type="hidden" name="data" value="payload"/>
                 <input type="submit" />
             </form>
